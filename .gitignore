@@ -6,6 +6,7 @@ faiss_marseille.bin
 metadata_marseille.json
 8532116-mettez-en-place-un-rag-pour-un-llm-main/
 output/
+.env
 
 __pycache__/
 *.pyc
