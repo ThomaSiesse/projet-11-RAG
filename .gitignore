@@ -1,0 +1,21 @@
+# Fichiers de données (trop gros)
+evenements-publics-openagenda.json
+evenements_marseille.json
+embeddings_marseille_cache.json
+faiss_marseille.bin
+metadata_marseille.json
+8532116-mettez-en-place-un-rag-pour-un-llm-main/
+output/
+
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+o.py
+mairie.py
+mairie.ipynb
+test.py
+test.ipynb
+# IDE
+.vscode/
+.idea/
