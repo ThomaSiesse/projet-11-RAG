@@ -44,3 +44,14 @@ Créez un fichier `.env` à la racine du projet avec le contenu suivant :
 ```
 MISTRAL_API_KEY=votre_clé_api_mistral
 ```
+## Structure du projet
+
+```
+.
+├── embeddings.py    # Créer les vecteur
+├── indexing.py      # créer l'index 
+├── requirements.txt
+├── embeddings_marseille_cache.json
+├── faiss_marseille.bin   (créé par indexing.py)
+├── metadata_marseille.json (créé par indexing.py)
+```
