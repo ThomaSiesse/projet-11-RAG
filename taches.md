@@ -20,6 +20,13 @@
     embending ok
     code indexing.py
 
+## 06/10/2026
+### Tâches
+    Mise en place du chunck par découpage récursif avec chevauchement pour ne pas perdre de sens à l'information
+    chunck ok
+    embenddings ok
+    
+
 Mettre en place les branches
 1. Créer la branche develop
 bash

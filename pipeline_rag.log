@@ -1,0 +1,280 @@
+2026-10-06 14:38:55,027 - INFO - 
+--- Chargement des données ---
+2026-10-06 14:38:55,748 - INFO - Avant filtre date : 27640 lignes
+2026-10-06 14:38:55,748 - INFO - 
+--- Filtre de la date : moins d'un an ---
+2026-10-06 14:38:55,795 - INFO - Après filtre date : 4713 lignes
+2026-10-06 14:38:55,795 - INFO - 
+--- Filtre Marseille ---
+2026-10-06 14:38:55,795 - INFO - Avant filtre ville : 4713 lignes
+2026-10-06 14:38:55,807 - INFO - Après filtre Marseille : 4713 lignes
+2026-10-06 14:38:55,807 - INFO - 
+--- Nettoyage des données ---
+2026-10-06 14:38:55,945 - INFO - Après nettoyage : 4713 lignes
+2026-10-06 14:38:55,945 - INFO - 
+--- Nettoyage terminé ---
+2026-10-06 14:38:55,948 - INFO - 
+--- Début de la phase d'embedding ---
+2026-10-06 14:38:55,948 - INFO - 
+--- Début de l'embedding ---
+2026-10-06 14:38:56,878 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:38:57,241 - INFO -   ✓ Batch 1 : 100 textes traités
+2026-10-06 14:38:58,397 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:38:58,744 - INFO -   ✓ Batch 2 : 100 textes traités
+2026-10-06 14:38:59,524 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:38:59,851 - INFO -   ✓ Batch 3 : 100 textes traités
+2026-10-06 14:39:00,590 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:00,772 - INFO -   ✓ Batch 4 : 100 textes traités
+2026-10-06 14:39:01,705 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:02,043 - INFO -   ✓ Batch 5 : 100 textes traités
+2026-10-06 14:39:02,772 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:03,034 - INFO -   ✓ Batch 6 : 100 textes traités
+2026-10-06 14:39:03,724 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:04,053 - INFO -   ✓ Batch 7 : 100 textes traités
+2026-10-06 14:39:04,908 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:05,276 - INFO -   ✓ Batch 8 : 100 textes traités
+2026-10-06 14:39:05,998 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:06,403 - INFO -   ✓ Batch 9 : 100 textes traités
+2026-10-06 14:39:07,204 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:07,436 - INFO -   ✓ Batch 10 : 100 textes traités
+2026-10-06 14:39:08,229 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:08,551 - INFO -   ✓ Batch 11 : 100 textes traités
+2026-10-06 14:39:09,560 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:09,883 - INFO -   ✓ Batch 12 : 100 textes traités
+2026-10-06 14:39:10,687 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:11,010 - INFO -   ✓ Batch 13 : 100 textes traités
+2026-10-06 14:39:11,814 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:12,097 - INFO -   ✓ Batch 14 : 100 textes traités
+2026-10-06 14:39:12,730 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:13,047 - INFO -   ✓ Batch 15 : 100 textes traités
+2026-10-06 14:39:13,862 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:14,137 - INFO -   ✓ Batch 16 : 100 textes traités
+2026-10-06 14:39:14,872 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:15,228 - INFO -   ✓ Batch 17 : 100 textes traités
+2026-10-06 14:39:16,012 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:16,321 - INFO -   ✓ Batch 18 : 100 textes traités
+2026-10-06 14:39:17,138 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:17,411 - INFO -   ✓ Batch 19 : 100 textes traités
+2026-10-06 14:39:18,820 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:19,242 - INFO -   ✓ Batch 20 : 100 textes traités
+2026-10-06 14:39:20,217 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:20,600 - INFO -   ✓ Batch 21 : 100 textes traités
+2026-10-06 14:39:21,626 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:21,944 - INFO -   ✓ Batch 22 : 100 textes traités
+2026-10-06 14:39:22,854 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:23,369 - INFO -   ✓ Batch 23 : 100 textes traités
+2026-10-06 14:39:24,230 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:24,723 - INFO -   ✓ Batch 24 : 100 textes traités
+2026-10-06 14:39:25,545 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:25,832 - INFO -   ✓ Batch 25 : 100 textes traités
+2026-10-06 14:39:27,379 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:27,738 - INFO -   ✓ Batch 26 : 100 textes traités
+2026-10-06 14:39:30,095 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:30,387 - INFO -   ✓ Batch 27 : 100 textes traités
+2026-10-06 14:39:31,754 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:32,079 - INFO -   ✓ Batch 28 : 100 textes traités
+2026-10-06 14:39:32,993 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:33,447 - INFO -   ✓ Batch 29 : 100 textes traités
+2026-10-06 14:39:35,406 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:35,706 - INFO -   ✓ Batch 30 : 100 textes traités
+2026-10-06 14:39:37,131 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:37,488 - INFO -   ✓ Batch 31 : 100 textes traités
+2026-10-06 14:39:38,334 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:38,704 - INFO -   ✓ Batch 32 : 100 textes traités
+2026-10-06 14:39:39,461 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:39,770 - INFO -   ✓ Batch 33 : 100 textes traités
+2026-10-06 14:39:40,485 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:41,013 - INFO -   ✓ Batch 34 : 100 textes traités
+2026-10-06 14:39:41,865 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:42,152 - INFO -   ✓ Batch 35 : 100 textes traités
+2026-10-06 14:39:42,871 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:43,234 - INFO -   ✓ Batch 36 : 100 textes traités
+2026-10-06 14:39:46,016 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:46,338 - INFO -   ✓ Batch 37 : 100 textes traités
+2026-10-06 14:39:47,859 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:48,257 - INFO -   ✓ Batch 38 : 100 textes traités
+2026-10-06 14:39:50,215 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:50,962 - INFO -   ✓ Batch 39 : 100 textes traités
+2026-10-06 14:39:51,751 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:52,063 - INFO -   ✓ Batch 40 : 100 textes traités
+2026-10-06 14:39:52,876 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:53,303 - INFO -   ✓ Batch 41 : 100 textes traités
+2026-10-06 14:39:54,135 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:54,505 - INFO -   ✓ Batch 42 : 100 textes traités
+2026-10-06 14:39:55,979 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:56,379 - INFO -   ✓ Batch 43 : 100 textes traités
+2026-10-06 14:39:57,277 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:57,634 - INFO -   ✓ Batch 44 : 100 textes traités
+2026-10-06 14:39:58,615 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:39:59,022 - INFO -   ✓ Batch 45 : 100 textes traités
+2026-10-06 14:39:59,841 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:40:00,243 - INFO -   ✓ Batch 46 : 100 textes traités
+2026-10-06 14:40:01,787 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:40:02,195 - INFO -   ✓ Batch 47 : 100 textes traités
+2026-10-06 14:40:02,509 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:40:02,652 - INFO -   ✓ Batch 48 : 13 textes traités
+2026-10-06 14:40:02,656 - INFO -  Embeddings OK !
+2026-10-06 14:40:02,657 - INFO - 
+--- Embedding terminé ---
+2026-10-06 14:40:02,657 - INFO - 
+--- Vérifications ---
+2026-10-06 14:40:02,659 - INFO - ✓ Embeddings OK !
+2026-10-06 14:40:02,660 - INFO - 
+--- Sauvegarde des données ---
+2026-10-06 14:40:06,364 - INFO - ✓ Embeddings Marseille créés et sauvegardés (4713 lignes)
+2026-10-06 14:40:06,366 - INFO - 
+--- Création de l'index FAISS ---
+2026-10-06 14:40:07,189 - INFO - Index FAISS créé : 4713 documents
+2026-10-06 14:40:07,269 - INFO - ✓ Index sauvegardé : faiss_marseille.bin
+2026-10-06 14:40:07,278 - INFO - 
+--- Création des métadonnées ---
+2026-10-06 14:40:08,109 - ERROR - ❌ Erreur: JSONEncoder.__init__() got an unexpected keyword argument 'force_ascii'
+Traceback (most recent call last):
+  File "/home/camille_sc/Bureau/Formation/Projet_11/mairie.py", line 205, in main
+    creer_metadonnees(df)
+  File "/home/camille_sc/Bureau/Formation/Projet_11/mairie.py", line 149, in creer_metadonnees
+    json.dump(metadata, f, force_ascii=False, indent=2)
+  File "/usr/lib/python3.12/json/__init__.py", line 173, in dump
+    iterable = cls(skipkeys=skipkeys, ensure_ascii=ensure_ascii,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: JSONEncoder.__init__() got an unexpected keyword argument 'force_ascii'
+2026-10-06 14:48:41,174 - INFO - 
+--- Chargement des données ---
+2026-10-06 14:48:42,283 - INFO - Avant filtre date : 27640 lignes
+2026-10-06 14:48:42,283 - INFO - 
+--- Filtre de la date : moins d'un an ---
+2026-10-06 14:48:42,340 - INFO - Après filtre date : 4713 lignes
+2026-10-06 14:48:42,340 - INFO - 
+--- Filtre Marseille ---
+2026-10-06 14:48:42,340 - INFO - Avant filtre ville : 4713 lignes
+2026-10-06 14:48:42,355 - INFO - Après filtre Marseille : 4713 lignes
+2026-10-06 14:48:42,355 - INFO - 
+--- Nettoyage des données ---
+2026-10-06 14:48:42,529 - INFO - Après nettoyage : 4713 lignes
+2026-10-06 14:48:42,530 - INFO - 
+--- Nettoyage terminé ---
+2026-10-06 14:48:42,533 - INFO - 
+--- Début de la phase d'embedding ---
+2026-10-06 14:48:42,533 - INFO - 
+--- Début de l'embedding ---
+2026-10-06 14:48:43,724 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:44,102 - INFO -   ✓ Batch 1 : 100 textes traités
+2026-10-06 14:48:44,846 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:45,191 - INFO -   ✓ Batch 2 : 100 textes traités
+2026-10-06 14:48:45,987 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:46,312 - INFO -   ✓ Batch 3 : 100 textes traités
+2026-10-06 14:48:47,031 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:47,277 - INFO -   ✓ Batch 4 : 100 textes traités
+2026-10-06 14:48:48,711 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:48,896 - INFO -   ✓ Batch 5 : 100 textes traités
+2026-10-06 14:48:49,659 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:49,892 - INFO -   ✓ Batch 6 : 100 textes traités
+2026-10-06 14:48:50,581 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:50,765 - INFO -   ✓ Batch 7 : 100 textes traités
+2026-10-06 14:48:51,810 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:52,035 - INFO -   ✓ Batch 8 : 100 textes traités
+2026-10-06 14:48:52,718 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:53,055 - INFO -   ✓ Batch 9 : 100 textes traités
+2026-10-06 14:48:53,721 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:53,937 - INFO -   ✓ Batch 10 : 100 textes traités
+2026-10-06 14:48:54,743 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:55,005 - INFO -   ✓ Batch 11 : 100 textes traités
+2026-10-06 14:48:55,643 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:55,893 - INFO -   ✓ Batch 12 : 100 textes traités
+2026-10-06 14:48:56,722 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:57,081 - INFO -   ✓ Batch 13 : 100 textes traités
+2026-10-06 14:48:57,876 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:58,311 - INFO -   ✓ Batch 14 : 100 textes traités
+2026-10-06 14:48:59,104 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:48:59,526 - INFO -   ✓ Batch 15 : 100 textes traités
+2026-10-06 14:49:00,439 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:00,758 - INFO -   ✓ Batch 16 : 100 textes traités
+2026-10-06 14:49:01,640 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:01,952 - INFO -   ✓ Batch 17 : 100 textes traités
+2026-10-06 14:49:02,681 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:03,194 - INFO -   ✓ Batch 18 : 100 textes traités
+2026-10-06 14:49:03,995 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:04,219 - INFO -   ✓ Batch 19 : 100 textes traités
+2026-10-06 14:49:04,963 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:05,223 - INFO -   ✓ Batch 20 : 100 textes traités
+2026-10-06 14:49:06,007 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:06,236 - INFO -   ✓ Batch 21 : 100 textes traités
+2026-10-06 14:49:06,999 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:07,230 - INFO -   ✓ Batch 22 : 100 textes traités
+2026-10-06 14:49:07,991 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:08,243 - INFO -   ✓ Batch 23 : 100 textes traités
+2026-10-06 14:49:09,081 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:09,540 - INFO -   ✓ Batch 24 : 100 textes traités
+2026-10-06 14:49:10,241 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:10,467 - INFO -   ✓ Batch 25 : 100 textes traités
+2026-10-06 14:49:11,265 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:11,499 - INFO -   ✓ Batch 26 : 100 textes traités
+2026-10-06 14:49:12,391 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:12,618 - INFO -   ✓ Batch 27 : 100 textes traités
+2026-10-06 14:49:13,415 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:13,635 - INFO -   ✓ Batch 28 : 100 textes traités
+2026-10-06 14:49:14,561 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:14,593 - INFO -   ✓ Batch 29 : 100 textes traités
+2026-10-06 14:49:15,361 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:15,699 - INFO -   ✓ Batch 30 : 100 textes traités
+2026-10-06 14:49:16,488 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:16,716 - INFO -   ✓ Batch 31 : 100 textes traités
+2026-10-06 14:49:17,614 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:17,835 - INFO -   ✓ Batch 32 : 100 textes traités
+2026-10-06 14:49:18,536 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:18,862 - INFO -   ✓ Batch 33 : 100 textes traités
+2026-10-06 14:49:19,765 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:19,879 - INFO -   ✓ Batch 34 : 100 textes traités
+2026-10-06 14:49:20,789 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:21,123 - INFO -   ✓ Batch 35 : 100 textes traités
+2026-10-06 14:49:22,427 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:22,657 - INFO -   ✓ Batch 36 : 100 textes traités
+2026-10-06 14:49:23,451 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:23,677 - INFO -   ✓ Batch 37 : 100 textes traités
+2026-10-06 14:49:25,089 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:25,317 - INFO -   ✓ Batch 38 : 100 textes traités
+2026-10-06 14:49:26,157 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:26,419 - INFO -   ✓ Batch 39 : 100 textes traités
+2026-10-06 14:49:27,342 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:27,760 - INFO -   ✓ Batch 40 : 100 textes traités
+2026-10-06 14:49:28,674 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:28,905 - INFO -   ✓ Batch 41 : 100 textes traités
+2026-10-06 14:49:29,697 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:29,918 - INFO -   ✓ Batch 42 : 100 textes traités
+2026-10-06 14:49:30,619 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:30,842 - INFO -   ✓ Batch 43 : 100 textes traités
+2026-10-06 14:49:31,977 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:32,140 - INFO -   ✓ Batch 44 : 100 textes traités
+2026-10-06 14:49:33,497 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:33,843 - INFO -   ✓ Batch 45 : 100 textes traités
+2026-10-06 14:49:34,785 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:35,039 - INFO -   ✓ Batch 46 : 100 textes traités
+2026-10-06 14:49:36,362 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:36,580 - INFO -   ✓ Batch 47 : 100 textes traités
+2026-10-06 14:49:37,378 - INFO - HTTP Request: POST https://api.mistral.ai/v1/embeddings "HTTP/1.1 200 OK"
+2026-10-06 14:49:37,384 - INFO -   ✓ Batch 48 : 13 textes traités
+2026-10-06 14:49:37,384 - INFO -  Embeddings OK !
+2026-10-06 14:49:37,384 - INFO - 
+--- Embedding terminé ---
+2026-10-06 14:49:37,384 - INFO - 
+--- Vérifications ---
+2026-10-06 14:49:37,385 - INFO - ✓ Embeddings OK !
+2026-10-06 14:49:37,385 - INFO - 
+--- Sauvegarde des données ---
+2026-10-06 14:49:37,836 - INFO - ✓ Embeddings Marseille créés et sauvegardés (4713 lignes)
+2026-10-06 14:49:37,837 - INFO - 
+--- Création de l'index FAISS ---
+2026-10-06 14:49:37,930 - INFO - Index FAISS créé : 4713 documents
+2026-10-06 14:49:37,940 - INFO - ✓ Index sauvegardé : faiss_marseille.bin
+2026-10-06 14:49:37,941 - INFO - 
+--- Création des métadonnées ---
+2026-10-06 14:49:38,036 - ERROR - ❌ Erreur: JSONEncoder.__init__() got an unexpected keyword argument 'force_ascii'
+Traceback (most recent call last):
+  File "/home/camille_sc/Bureau/Formation/Projet_11/mairie.py", line 205, in main
+    creer_metadonnees(df)
+  File "/home/camille_sc/Bureau/Formation/Projet_11/mairie.py", line 149, in creer_metadonnees
+    json.dump(metadata, f, force_ascii=False, indent=2)
+  File "/usr/lib/python3.12/json/__init__.py", line 173, in dump
+    iterable = cls(skipkeys=skipkeys, ensure_ascii=ensure_ascii,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: JSONEncoder.__init__() got an unexpected keyword argument 'force_ascii'
