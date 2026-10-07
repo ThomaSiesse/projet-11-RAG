@@ -50,7 +50,7 @@ for rank, (dist, idx) in enumerate(zip(distances[0], indices[0]), 1):
 
     title = row["title"]
     location = row["location"]
-    date = row["date"]
+    date = f"{row['date_debut']} → {row['date_fin']}"
     description = row["description"]
 
     print(f"{rank}. (distance: {dist:.4f})")

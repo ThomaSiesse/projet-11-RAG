@@ -1,0 +1,212 @@
+[
+  {
+    "config": "size=500, overlap=50",
+    "num_chunks": 5680,
+    "queries": {
+      "Que faire ce week-end \u00e0 Marseille ?": {
+        "avg_distance": 0.44650760293006897,
+        "min_distance": 0.44220107793807983,
+        "distances": [
+          0.44220107793807983,
+          0.4463675022125244,
+          0.4509543180465698
+        ]
+      },
+      "Concerts musique jazz": {
+        "avg_distance": 0.40732336044311523,
+        "min_distance": 0.3870431184768677,
+        "distances": [
+          0.3870431184768677,
+          0.40711236000061035,
+          0.4278145730495453
+        ]
+      },
+      "\u00c9v\u00e9nements culturels biblioth\u00e8que": {
+        "avg_distance": 0.4004106819629669,
+        "min_distance": 0.3965734541416168,
+        "distances": [
+          0.3965734541416168,
+          0.40149441361427307,
+          0.40316423773765564
+        ]
+      },
+      "Sports loisirs outdoor": {
+        "avg_distance": 0.5147519707679749,
+        "min_distance": 0.5056014060974121,
+        "distances": [
+          0.5056014060974121,
+          0.5190132260322571,
+          0.5196412801742554
+        ]
+      }
+    }
+  },
+  {
+    "config": "size=1000, overlap=20",
+    "num_chunks": 2608,
+    "queries": {
+      "Que faire ce week-end \u00e0 Marseille ?": {
+        "avg_distance": 0.42476117610931396,
+        "min_distance": 0.4130723476409912,
+        "distances": [
+          0.4130723476409912,
+          0.42839306592941284,
+          0.43281811475753784
+        ]
+      },
+      "Concerts musique jazz": {
+        "avg_distance": 0.41170254349708557,
+        "min_distance": 0.3787020146846771,
+        "distances": [
+          0.3787020146846771,
+          0.4267174303531647,
+          0.42968815565109253
+        ]
+      },
+      "\u00c9v\u00e9nements culturels biblioth\u00e8que": {
+        "avg_distance": 0.3850196897983551,
+        "min_distance": 0.3786071836948395,
+        "distances": [
+          0.3786071836948395,
+          0.38232290744781494,
+          0.39412903785705566
+        ]
+      },
+      "Sports loisirs outdoor": {
+        "avg_distance": 0.5138299465179443,
+        "min_distance": 0.507606565952301,
+        "distances": [
+          0.507606565952301,
+          0.512454628944397,
+          0.5214285254478455
+        ]
+      }
+    }
+  },
+  {
+    "config": "size=1000, overlap=100",
+    "num_chunks": 2839,
+    "queries": {
+      "Que faire ce week-end \u00e0 Marseille ?": {
+        "avg_distance": 0.43171706795692444,
+        "min_distance": 0.4300883710384369,
+        "distances": [
+          0.4300883710384369,
+          0.43152955174446106,
+          0.43353331089019775
+        ]
+      },
+      "Concerts musique jazz": {
+        "avg_distance": 0.4242200553417206,
+        "min_distance": 0.39932283759117126,
+        "distances": [
+          0.39932283759117126,
+          0.43406087160110474,
+          0.43927645683288574
+        ]
+      },
+      "\u00c9v\u00e9nements culturels biblioth\u00e8que": {
+        "avg_distance": 0.3763309419155121,
+        "min_distance": 0.3719462752342224,
+        "distances": [
+          0.3719462752342224,
+          0.3724665939807892,
+          0.38457992672920227
+        ]
+      },
+      "Sports loisirs outdoor": {
+        "avg_distance": 0.5040799379348755,
+        "min_distance": 0.5004994869232178,
+        "distances": [
+          0.5004994869232178,
+          0.5006176829338074,
+          0.5111225843429565
+        ]
+      }
+    }
+  },
+  {
+    "config": "size=1000, overlap=200",
+    "num_chunks": 3194,
+    "queries": {
+      "Que faire ce week-end \u00e0 Marseille ?": {
+        "avg_distance": 0.42538130283355713,
+        "min_distance": 0.4244341254234314,
+        "distances": [
+          0.4244341254234314,
+          0.42447125911712646,
+          0.42723849415779114
+        ]
+      },
+      "Concerts musique jazz": {
+        "avg_distance": 0.42110109329223633,
+        "min_distance": 0.4129614233970642,
+        "distances": [
+          0.4129614233970642,
+          0.4239920973777771,
+          0.4263497591018677
+        ]
+      },
+      "\u00c9v\u00e9nements culturels biblioth\u00e8que": {
+        "avg_distance": 0.38700369000434875,
+        "min_distance": 0.38272324204444885,
+        "distances": [
+          0.38272324204444885,
+          0.3885387182235718,
+          0.3897491693496704
+        ]
+      },
+      "Sports loisirs outdoor": {
+        "avg_distance": 0.5113286375999451,
+        "min_distance": 0.5080162882804871,
+        "distances": [
+          0.5080162882804871,
+          0.5123301148414612,
+          0.513639509677887
+        ]
+      }
+    }
+  },
+  {
+    "config": "size=1500, overlap=100",
+    "num_chunks": 1826,
+    "queries": {
+      "Que faire ce week-end \u00e0 Marseille ?": {
+        "avg_distance": 0.4001884460449219,
+        "min_distance": 0.3867603838443756,
+        "distances": [
+          0.3867603838443756,
+          0.40112024545669556,
+          0.41268473863601685
+        ]
+      },
+      "Concerts musique jazz": {
+        "avg_distance": 0.4217253029346466,
+        "min_distance": 0.38598257303237915,
+        "distances": [
+          0.38598257303237915,
+          0.4394572377204895,
+          0.43973612785339355
+        ]
+      },
+      "\u00c9v\u00e9nements culturels biblioth\u00e8que": {
+        "avg_distance": 0.3796651065349579,
+        "min_distance": 0.37334561347961426,
+        "distances": [
+          0.37334561347961426,
+          0.3790605962276459,
+          0.38658902049064636
+        ]
+      },
+      "Sports loisirs outdoor": {
+        "avg_distance": 0.49761834740638733,
+        "min_distance": 0.47300899028778076,
+        "distances": [
+          0.47300899028778076,
+          0.49749261140823364,
+          0.5223535299301147
+        ]
+      }
+    }
+  }
+]

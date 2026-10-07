@@ -32,19 +32,18 @@ df = pd.read_json("evenements-publics-openagenda.json")
 
 # Filtre date
 print(f"\n--- Filtre de la date : moins d'un an ---")
-df["lastdate_begin"] = df["lastdate_begin"].astype(str).str[:10]
+# Garde la date locale (AAAA-MM-JJ) : "2019-07-29T01:00:00+02:00" -> "2019-07-29"
+df["firstdate_begin"] = df["firstdate_begin"].astype(str).str[:10]  # début 1re séance
+df["lastdate_end"] = df["lastdate_end"].astype(str).str[:10]  # fin dernière séance
 print(f"Avant filtre date : {len(df)} lignes")
-df = df[df["lastdate_begin"] >= date_un_an]
+# Filtre sur la fin : un événement commencé il y a longtemps mais encore en cours est gardé
+df = df[df["lastdate_end"] >= date_un_an]
 print(f"Après filtre date : {len(df)} lignes")
 
-# Filtre Marseille
-print(f"\n--- Filtre Marseille ---")
-df = df[df["location_city"] == "Marseille"]
-print(f"Après filtre Marseille : {len(df)} lignes")
 
 # Nettoyage données
 print(f"\n--- Nettoyage des données ---")
-df = df.dropna(subset=["title_fr", "description_fr", "lastdate_begin"])
+df = df.dropna(subset=["title_fr", "description_fr", "firstdate_begin", "lastdate_end"])
 df["contenu"] = df["longdescription_fr"].fillna(df["description_fr"])
 df["contenu"] = df["contenu"].apply(nettoyage_html)
 print(f"Après nettoyage : {len(df)} lignes")
@@ -76,7 +75,8 @@ for idx, row in df.iterrows():
                 "original_id": idx,
                 "title": row["title_fr"],
                 "location": row["location_name"],
-                "date": row["lastdate_begin"],
+                "date_debut": row["firstdate_begin"],
+                "date_fin": row["lastdate_end"],
                 "description": row["description_fr"],
             }
         )
