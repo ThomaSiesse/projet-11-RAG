@@ -53,8 +53,8 @@ print(f"\n--- Nettoyage terminé ---")
 # Chunking
 print(f"\n--- Début de la phase de chunck ---")
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=1000,
-    chunk_overlap=20,
+    chunk_size=500,
+    chunk_overlap=200,
 )
 
 segments = text_splitter.split_text(df["contenu"].str.cat(sep=" "))
@@ -63,32 +63,48 @@ print(f"Nombre de segments créés : {len(segments)}")
 print(f"Exemple de segment : {segments[0][:200]}...")
 print(f"\n--- Fin de la phase de chunck ---")
 
+chunks_data = []
+for idx, row in df.iterrows():
+    # Chunker cette description
+    chunks = text_splitter.split_text(row["contenu"])
+
+    for chunk_text in chunks:
+        chunks_data.append(
+            {
+                "chunk_text": chunk_text,
+                "embedding": None,  # À remplir après
+                "original_id": idx,
+                "title": row["title_fr"],
+                "location": row["location_name"],
+                "date": row["lastdate_begin"],
+                "description": row["description_fr"],
+            }
+        )
+
+df_chunks = pd.DataFrame(chunks_data)
+print(f"✓ {len(df_chunks)} chunks créés avec métadonnées")
 # Embeddings
-print(f"\n--- Début de la phase d'embedding ---")
+embeddings = [None] * len(df_chunks)  # ← Pré-initialiser avec NaN
 batch_size = 100
-embeddings = []
 
 print(f"\n--- Début de l'embedding ---")
 
-# ✅ Boucler sur len(segments), pas len(df)
-for i in range(0, len(segments), batch_size):
-    batch = segments[i : i + batch_size]
+for i in range(0, len(df_chunks), batch_size):
+    batch_indices = range(i, min(i + batch_size, len(df_chunks)))
+    batch = df_chunks["chunk_text"].iloc[i : i + batch_size].tolist()
 
     try:
-        # ✅ Utiliser .create() et inputs (pas input)
         response = client.embeddings.create(model=model, inputs=batch)
 
-        for data in response.data:
-            embeddings.append(data.embedding)
+        for j, data in enumerate(response.data):
+            embeddings[i + j] = data.embedding  # ← Remplir directement l'index
+
         print(f"  ✓ Batch {(i // batch_size) + 1} : {len(batch)} chunks traités")
 
     except Exception as e:
         print(f"  ❌ Erreur batch {(i // batch_size) + 1} : {e}")
-        embeddings.extend([None] * len(batch))
 
-# ✅ Créer un dataframe des chunks (pas assigner à df)
-df_chunks = pd.DataFrame({"chunk_text": segments, "embedding": embeddings})
-
+df_chunks["embedding"] = embeddings
 # Vérifications
 print(f"\n--- Vérifications ---")
 assert len(df_chunks["embedding"]) == len(df_chunks), "Pas tous les embeddings"
