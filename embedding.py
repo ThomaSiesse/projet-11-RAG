@@ -53,8 +53,8 @@ print(f"\n--- Nettoyage terminé ---")
 # Chunking
 print(f"\n--- Début de la phase de chunck ---")
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,
-    chunk_overlap=200,
+    chunk_size=1500,
+    chunk_overlap=100,
 )
 
 segments = text_splitter.split_text(df["contenu"].str.cat(sep=" "))
