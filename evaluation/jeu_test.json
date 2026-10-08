@@ -1,0 +1,107 @@
+{
+  "description": "Jeu de test annoté du chatbot Puls-Events (Marseille). Pour chaque question : la réponse de référence et la liste exhaustive des événements de la base qui y répondent (titres exacts).",
+  "annote_le": "2026-10-08",
+  "valide_jusqu_au": "2026-10-21",
+  "remarque": "Le chatbot ignore les événements terminés : après la date de validité, certaines références deviennent fausses et le jeu doit être mis à jour. Une liste evenements_attendus vide signifie que le chatbot ne doit rien recommander.",
+  "questions": [
+    {
+      "id": 1,
+      "categorie": "concert",
+      "question": "Quels concerts du Sublime Tour sont prévus à La Plateforme en décembre 2026 ?",
+      "reference": "Le Sublime Tour passe par La Plateforme (Entrée Nord) en décembre 2026 : ROUNHAA le jeudi 17 décembre, LUTHER le vendredi 18 décembre, le Sublime Club du 18 au 19 décembre (interdit aux moins de 18 ans), ainsi que des formules groupées : Sublime Tour (17-18 décembre), Pack duo Luther + Rounhaa (17-18 décembre) et Pack 2 concerts + club (17-19 décembre).",
+      "evenements_attendus": [
+        "ROUNHAA - Marseille - La Plateforme",
+        "LUTHER - Marseille - La Plateforme",
+        "SUBLIME CLUB - Marseille - La Plateforme",
+        "Sublime Tour - Marseille",
+        "PACK DUO - Luther + Rounhaa - Marseille - La Plateforme",
+        "PACK 2 CONCERTS + CLUB - Sublime Tour - Marseille"
+      ]
+    },
+    {
+      "id": 2,
+      "categorie": "musique électronique",
+      "question": "Une soirée techno à La Plateforme en novembre 2026 ?",
+      "reference": "La soirée Kahos IX (techno, hard techno, hard trance, indus) a lieu à La Plateforme (Entrée Nord, ancien Dock des Suds) du samedi 14 au dimanche 15 novembre 2026.",
+      "evenements_attendus": ["Kahos - La plateforme"]
+    },
+    {
+      "id": 3,
+      "categorie": "exposition",
+      "question": "Quelles expositions jeunesse propose la Bibliothèque du Merlan en novembre 2026 ?",
+      "reference": "Du 17 au 28 novembre 2026, la Bibliothèque du Merlan présente l'exposition de l'autrice jeunesse Coralie Saudo (travaux et jeux) et « 1001 jeux sonores avec les animaux d'illustration jeunesse », des sculptures sonores à explorer par les enfants.",
+      "evenements_attendus": [
+        "Exposition autrice jeunesse Coralie Saudo",
+        "1001 jeux sonores avec les animaux d'illustration jeunesse"
+      ]
+    },
+    {
+      "id": 4,
+      "categorie": "famille",
+      "question": "Un atelier d'éveil musical pour les tout-petits en décembre 2026 ?",
+      "reference": "Deux séances d'éveil musical pour les tout-petits ont lieu en décembre 2026 : le mercredi 16 décembre à la Médiathèque Salim-Hatubou (0 à 5 ans) et le samedi 19 décembre à la Bibliothèque des Cinq-Avenues (6 mois à 3 ans, sur inscription).",
+      "evenements_attendus": ["Éveil musical"]
+    },
+    {
+      "id": 5,
+      "categorie": "question factuelle",
+      "question": "Quand a lieu le festival Primed à Marseille ?",
+      "reference": "Primed, le festival de la Méditerranée en images, a lieu à la Bibliothèque de l'Alcazar du samedi 28 novembre au samedi 5 décembre 2026.",
+      "evenements_attendus": ["Primed : le festival de la Méditerranée en Images"]
+    },
+    {
+      "id": 6,
+      "categorie": "festival",
+      "question": "Je cherche un festival de cinéma sur la Méditerranée.",
+      "reference": "Le Festival Films Femmes Méditerranée, consacré aux réalisatrices des deux rives, présente sa programmation le 22 octobre 2026 à la Bibliothèque de l'Alcazar, puis y propose le 7 novembre 2026 une rencontre « Regards sur la Méditerranée » et une table ronde sur la jeune création libanaise. Primed, le festival de la Méditerranée en images, se tient à la Bibliothèque de l'Alcazar du 28 novembre au 5 décembre 2026.",
+      "evenements_attendus": [
+        "21e Festival Films Femmes Méditerranée - Présentation de la programmation 2026",
+        "Festival Films Femmes Méditerranée - Regards sur la Méditerranée : la fabrication des récits et des représentations",
+        "Films Femmes Méditerranée - La jeune création libanaise",
+        "Primed : le festival de la Méditerranée en Images"
+      ]
+    },
+    {
+      "id": 7,
+      "categorie": "festival",
+      "question": "Un festival de musique en plein air en juin 2027 ?",
+      "reference": "Le Festival Marsatac (29e édition) a lieu au Parc Borély du jeudi 10 au dimanche 13 juin 2027.",
+      "evenements_attendus": ["Festival Marsatac - 29ème édition"]
+    },
+    {
+      "id": 8,
+      "categorie": "concert",
+      "question": "Un concert de musique électronique à La Plateforme en avril 2027 ?",
+      "reference": "French 79, figure de la scène électronique française, joue à La Plateforme (Entrée Nord) le samedi 3 avril 2027.",
+      "evenements_attendus": ["FRENCH 79 - Marseille"]
+    },
+    {
+      "id": 9,
+      "categorie": "rencontre",
+      "question": "Un café-philo en décembre 2026 ?",
+      "reference": "Un café-philo sur le thème de la Liberté a lieu à la Bibliothèque de l'Alcazar le samedi 12 décembre 2026.",
+      "evenements_attendus": ["Café-philo - la Liberté"]
+    },
+    {
+      "id": 10,
+      "categorie": "concert",
+      "question": "Où trouver des concerts à la bougie à Marseille ?",
+      "reference": "Les concerts à la bougie (Candlelight) proposent des œuvres jouées en direct à la lueur des bougies dans des lieux emblématiques de Marseille ; la programmation court jusqu'au 15 juillet 2027.",
+      "evenements_attendus": ["Concert à la bougie à Marseille, découvrez le programme et les dates"]
+    },
+    {
+      "id": 11,
+      "categorie": "sans résultat",
+      "question": "Un spectacle de magie en novembre 2026 ?",
+      "reference": "Aucun spectacle de magie n'est programmé en novembre 2026 dans les événements disponibles. Le chatbot doit le dire, sans inventer d'événement.",
+      "evenements_attendus": []
+    },
+    {
+      "id": 12,
+      "categorie": "hors sujet",
+      "question": "Donne-moi une recette de ratatouille.",
+      "reference": "Cette demande est hors sujet : le chatbot recommande des événements culturels à Marseille et ne donne pas de recettes. Il ne doit inventer aucun événement.",
+      "evenements_attendus": []
+    }
+  ]
+}

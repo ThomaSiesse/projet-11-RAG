@@ -59,6 +59,10 @@ MISTRAL_API_KEY=votre_clé_api_mistral
 ├── requirements.txt
 ├── chunks_marseille_cache.json (créé par embedding.py)
 ├── faiss_chunks.bin   (créé par indexing.py)
+├── evaluation/
+│   ├── jeu_test.json        # 12 questions annotées (référence + événements attendus)
+│   ├── evaluer_ragas.py     # évaluation RAGAS + mesures exactes
+│   └── resultats_ragas.csv  (créé par evaluer_ragas.py)
 ```
 
 ## Utilisation
@@ -121,5 +125,19 @@ print(resultat["question_recherche"])  # requête utilisée pour FAISS, ex. "con
 print(resultat["periode"])             # ex. "du samedi 10 octobre 2026 au dimanche 11 octobre 2026"
 print(resultat["evenements"])          # les 5 candidats transmis au modèle
 ```
+
+### Évaluer le chatbot (RAGAS)
+
+```bash
+python evaluation/evaluer_ragas.py               # les 12 questions du jeu de test
+python evaluation/evaluer_ragas.py --limite 2    # essai rapide
+```
+
+Le script pose chaque question au chatbot, puis calcule les métriques RAGAS (faithfulness, answer relevancy,
+context precision, context recall) et deux mesures exactes à partir des titres annotés
+(rappel de la recherche, précision des recommandations). Coût : environ 150 appels API pour le jeu complet.
+
+> Le jeu de test est valable jusqu'à la date indiquée dans `jeu_test.json` (`valide_jusqu_au`) :
+> les événements terminés sortent de la recherche, il faut ensuite mettre les références à jour.
 
 Le fonctionnement interne (chaîne LangChain, filtres, choix techniques, limites) est détaillé dans [CHATBOT.md](CHATBOT.md).
