@@ -1,7 +1,7 @@
 """
 chatbot.py — Assistant de recommandation d'événements (RAG Puls-Events)
 
-Relie l'index FAISS (créé par indexing.py) au modèle de chat Mistral via LangChain :
+Relie l'index FAISS (créé par vectorisation.py) au modèle de chat Mistral via LangChain :
 
     question
       -> analyse (LLM, sortie structurée) : requête autonome + période demandée
@@ -299,10 +299,10 @@ def charger_vector_store(chunks_path, index_path, embeddings):
     sans recalculer aucun embedding.
     La ligne i de l'index correspond à la ligne i du fichier de chunks.
     """
-    for chemin, script in [(chunks_path, "embedding.py"), (index_path, "indexing.py")]:
+    for chemin in [chunks_path, index_path]:
         if not os.path.exists(chemin):
             raise FileNotFoundError(
-                f"{chemin} introuvable : exécutez d'abord {script}."
+                f"{chemin} introuvable : exécutez d'abord python pipeline.py."
             )
 
     print(f"--- Chargement des chunks : {chunks_path} ---")
@@ -310,7 +310,7 @@ def charger_vector_store(chunks_path, index_path, embeddings):
     df = df.drop(columns=["embedding"])  # les vecteurs sont déjà dans l'index FAISS
     if "date_fin" not in df.columns:
         print(
-            "⚠️  Cache sans date_debut/date_fin : relancez embedding.py puis indexing.py"
+            "⚠️  Cache sans date_debut/date_fin : relancez python pipeline.py"
         )
         df["date_debut"] = df["date_fin"] = df["date"]
     for col in ["date_debut", "date_fin"]:
@@ -329,7 +329,7 @@ def charger_vector_store(chunks_path, index_path, embeddings):
     if index.ntotal != len(df):
         raise ValueError(
             f"Index ({index.ntotal} vecteurs) et chunks ({len(df)} lignes) désalignés : "
-            "relancez indexing.py sur le même fichier de chunks."
+            "relancez python vectorisation.py."
         )
 
     documents = {

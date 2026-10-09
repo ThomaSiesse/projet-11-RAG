@@ -1,4 +1,6 @@
 # Fichiers de données (trop gros)
+chunks_marseille.json
+.pytest_cache/
 evenements-publics-openagenda.json
 evenements_marseille.json
 embeddings_marseille_cache.json
